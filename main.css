@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    height: 100vh;
+   grid-column: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+   "navbar navbar navbar"
+   "banner banner banner"
+   "emojis emojis emojis"
+   "letter letter letter"
+   "quotes verse verse"
+   "past_prayers past_prayers past_prayers"
+   "footer footer footer";
+   background-color: rgb(246, 246, 228);
+
+}
+
+.navber{
+    grid-area: navbar;
+}
+
+.banner{
+    grid-area: banner;
+}
+
+.emojis{
+    grid-area: emojis;
+}
+
+.letter{
+    grid-area: letter;
+}
+
+.quotes{
+    grid-area: quotes;
+}
+
+.verse{
+    grid-area: verse;
+}
+
+.past_prayers{
+    grid-area: past_prayers;
+}
+
+.footer{
+    grid-area: footer;
+}
