@@ -1,7 +1,7 @@
 .container {
     display: grid;
     height: 100vh;
-   grid-column: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto;
    grid-template-areas: 
    "navbar navbar navbar"
@@ -11,16 +11,39 @@
    "quotes verse verse"
    "past_prayers past_prayers past_prayers"
    "footer footer footer";
-   background-color: rgb(246, 246, 228);
+   background-color: #F7F5EF;
+   color: #333333;
 
 }
 
-.navber{
+.navbar{
     grid-area: navbar;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar img{
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #556B44;
+    padding: 10px;
 }
 
 .banner{
     grid-area: banner;
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .emojis{
