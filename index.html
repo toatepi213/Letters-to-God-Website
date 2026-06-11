@@ -10,21 +10,27 @@
     <div class="container">
 
         <div class="navbar">
-            <a href="#"><img src="logo/blue red and stamp.png"></a>
-            <a href="#">Letters to God</a>
-            <a href="#">Home</a>
-            <a href="#">Past Prayers</a>
-            <a href="#">About</a>
+           <div class="logo-section">
+                <a href="#"><img src="logo/blue red and stamp.png" alt="Logo"></a>
+                <h1>Letters to God</h1>
+            </div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Past Prayers</a>
+                <a href="#">About</a>
+            </div>
         </div>
 
 
         <div class="banner">
-            <img src="logo/auckland.png" alt="Auckland at night">
+            <img src="logo/banner2.png" alt="Auckland at night">
         </div>
 
 
 
         <div class="emojis">
+            <h3>How I feel right now</h3><br>
             <span style='font-size:100px;'>&#128519;</span>
             Blessed
             <span style='font-size:100px;'>&#128512;</span>
@@ -42,7 +48,21 @@
         </div>
 
 
-        <div class="letter">Write your prayers</div>
+        <div class="letter">
+                <h2>Write Your Prayer</h2>
+                    <textarea
+                        id="prayerBox"
+                        placeholder="Dear God, today I am grateful for..."
+                        rows="10"
+                        cols="80">
+                    </textarea>
+                <br><br>
+
+                <button type="button">Save Prayer</button>
+        </div>
+
+
+
         <div class="quotes">Quote for the day</div>
         <div class="verse">Verse for the day</div>
         <div class="past_prayers">My Previous Prayers</div>
