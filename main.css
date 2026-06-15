@@ -8,7 +8,7 @@
    "banner banner banner"
    "emojis emojis emojis"
    "letter letter letter"
-   "quotes verse verse"
+   "quotes verse whitespace"
    "past_prayers past_prayers past_prayers"
    "footer footer footer";
    background-color: #F7F5EF;
@@ -124,10 +124,18 @@
     grid-area: verse;
 }
 
+.whitespace{
+    grid-area: whitespace;
+}
 .past_prayers{
     grid-area: past_prayers;
 }
 
 .footer{
     grid-area: footer;
+    background: #556B44; 
+    color: #F7F5EF; 
+    padding: 2%; 
+    margin: 0%; 
+    text-align: center;
 }
