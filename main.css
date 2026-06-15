@@ -8,8 +8,8 @@
    "banner banner banner"
    "emojis emojis emojis"
    "letter letter letter"
-   "quotes verse whitespace"
-   "past_prayers past_prayers past_prayers"
+   "motivation verse quotes"
+   "past_prayers past_prayers past_prayers "
    "footer footer footer";
    background-color: #F7F5EF;
    color: #333333;
@@ -68,6 +68,9 @@
 .emojis{ 
     grid-area: emojis; 
     text-align: center; 
+    background-color: #F7F5EF;
+    border: 2px solid #eee9dd; 
+    border-radius: 10px; 
 } 
 
 .emojis h3{ 
@@ -81,6 +84,7 @@
     grid-area: letter; 
     padding: 20px; 
     text-align: center; 
+    background-color: #F7F5EF;
 }
 
 .letter h2{ 
@@ -95,7 +99,7 @@
     height: 300px; 
     padding: 15px; 
     font-size: 18px; 
-    border: 2px solid #556B44; 
+    border: 2px solid #eee9dd; 
     border-radius: 10px; 
     resize: vertical; 
 }
@@ -115,20 +119,47 @@
     background-color: #445535; 
 }
 
+.motivation{
+    grid-area: motivation;
+    color: #556B44; 
+    margin: 5%;
+    background-color: #F7F5EF;
+    border: 2px solid #eee9dd; 
+    border-radius: 10px; 
+}
 
 .quotes{
     grid-area: quotes;
+    margin: 5%;
+    border-radius: 10px; 
+    background-color: #F7F5EF;
+    border: 2px solid #eee9dd; 
 }
 
 .verse{
     grid-area: verse;
+    color: #556B44; 
+    margin: 5%;
+    border-radius: 10px; 
+    background-color: #F7F5EF;
+    border: 2px solid #eee9dd; 
+
 }
 
-.whitespace{
-    grid-area: whitespace;
-}
+
+
 .past_prayers{
     grid-area: past_prayers;
+    color: #556B44; 
+    padding-left: 10%;
+    border-radius: 10px; 
+    background-color: #F7F5EF;
+    border: 2px solid #eee9dd; 
+
+}
+
+.past_prayers li{
+    color: black;
 }
 
 .footer{
@@ -138,4 +169,8 @@
     padding: 2%; 
     margin: 0%; 
     text-align: center;
+}
+
+h4{
+    color: black;
 }
