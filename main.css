@@ -16,108 +16,104 @@
 
 }
 
-.navbar{
-    grid-area: navbar;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+.navbar{ grid-area: navbar; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 30px; 
+} 
 
+.logo-section{ 
+    display: flex; 
+    align-items: center; 
+} 
+
+.logo-section img{ 
+    width: 60px; 
+    height: auto; 
+    margin-right: 10px; 
 }
 
-.logo-section{
-    display: flex;
-    align-items: center;
-}
+.logo-section h1{ 
+    font-size: 28px; 
+    color: #556B44; 
+    margin: 0; 
+    font-family: Georgia, serif; 
+    font-weight: 400; 
+} 
 
-.logo-section img{
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
-}
+.menu{ 
+    display: flex; 
+    gap: 25px; 
+} 
 
-.logo-section h1{
-    font-size: 28px;
-    color: #556B44;
-    margin: 0;
-    font-family: Georgia, serif;
-    font-weight: 400;
-}
-
-.menu{
-    display: flex;
-    gap: 25px;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #556B44;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.banner{
-    grid-area: banner;
-    width: 100%;
-
-}
-
-.banner img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.emojis{
-    grid-area: emojis;
-    text-align: center;
-}
-
-.emojis h3{
-    background: #556B44;
-    color: #F7F5EF;
-    padding: 2%;
-    margin: 0%;
-}
-
-.letter{
-    grid-area: letter;
-    padding: 20px;
-    text-align: center;
-}
-
-.letter h2{
-    color: #556B44;
-    text-align: left;
-    padding-left: 16%;
-}
-
-.letter textarea{
-    width: 150%;
-    max-width: 1200px;
-    height: 300px;
-    padding: 15px;
-    font-size: 18px;
-    border: 2px solid #556B44;
-    border-radius: 10px;
-    resize: vertical;
-}
-
-.letter button{
-    background-color: #556B44;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.letter button:hover{
-    background-color: #445535;
+.menu a{ 
+    text-decoration: none; 
+    color: #556B44; 
+    font-size: 20px; 
+    font-weight: bold; 
+} 
+.banner{ 
+    grid-area: banner; 
+    width: 100%; 
 }
 
 
+.banner img{ 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+} 
+
+.emojis{ 
+    grid-area: emojis; 
+    text-align: center; 
+} 
+
+.emojis h3{ 
+    background: #556B44; 
+    color: #F7F5EF; 
+    padding: 2%; 
+    margin: 0%; 
+} 
+
+.letter{ 
+    grid-area: letter; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.letter h2{ 
+    color: #556B44; 
+    text-align: left; 
+    padding-left: 16%; 
+}
+
+.letter textarea{ 
+    width: 150%; 
+    max-width: 1200px; 
+    height: 300px; 
+    padding: 15px; 
+    font-size: 18px; 
+    border: 2px solid #556B44; 
+    border-radius: 10px; 
+    resize: vertical; 
+}
+
+.letter button{ 
+    background-color: #556B44; 
+    color: white; 
+    border: none; 
+    padding: 12px 25px; 
+    font-size: 18px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+
+.letter button:hover{ 
+    background-color: #445535; 
+}
 
 
 .quotes{
