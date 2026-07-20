@@ -8,169 +8,166 @@
    "banner banner banner"
    "emojis emojis emojis"
    "letter letter letter"
-   "motivation verse quotes"
-   "past_prayers past_prayers past_prayers "
+   "motivation quotes verse"
+   "past_prayers past_prayers past_prayers"
    "footer footer footer";
    background-color: #F7F5EF;
    color: #333333;
 
 }
 
-.navbar{ grid-area: navbar; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 30px; 
-} 
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
 
-.logo-section{ 
-    display: flex; 
-    align-items: center; 
-} 
-
-.logo-section img{ 
-    width: 60px; 
-    height: auto; 
-    margin-right: 10px; 
 }
 
-.logo-section h1{ 
-    font-size: 28px; 
-    color: #556B44; 
-    margin: 0; 
-    font-family: Georgia, serif; 
-    font-weight: 400; 
-} 
+.logo-section{
+    display: flex;
+    align-items: center;
+}
 
-.menu{ 
-    display: flex; 
-    gap: 25px; 
-} 
+.logo-section img{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
 
-.menu a{ 
-    text-decoration: none; 
-    color: #556B44; 
-    font-size: 20px; 
-    font-weight: bold; 
-} 
-.banner{ 
-    grid-area: banner; 
-    width: 100%; 
+.logo-section h1{
+    font-size: 28px;
+    color: #556B44;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    gap: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #556B44;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner{
+    grid-area: banner;
+    width: 100%;
+
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.emojis{
+    grid-area: emojis;
+    text-align: center;
+}
+
+.emojis h3{
+    background: #556B44;
+    color: #F7F5EF;
+    padding: 2%;
+    margin: 0;
+}
+
+.emoji-list{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.emoji-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.emoji-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+}
+
+.emoji-item span{
+    font-size: 100px;
+}
+
+.emoji-item p{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.letter{
+    grid-area: letter;
+    padding: 20px;
+    text-align: center;
+}
+
+.letter h2{
+    color: #556B44;
+    text-align: left;
+    padding-left: 16%;
+}
+
+.letter textarea{
+    width: 150%;
+    max-width: 1200px;
+    height: 300px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #556B44;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.letter button{
+    background-color: #556B44;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+-}
+
+.letter button:hover{
+    background-color: #445535;
 }
 
 
-.banner img{ 
-    width: 100%; 
-    height: auto; 
-    display: block; 
-} 
 
-.emojis{ 
-    grid-area: emojis; 
-    text-align: center; 
-    background-color: #F7F5EF;
-    border: 2px solid #eee9dd; 
-    border-radius: 10px; 
-} 
-
-.emojis h3{ 
-    background: #556B44; 
-    color: #F7F5EF; 
-    padding: 2%; 
-    margin: 0%; 
-} 
-
-.letter{ 
-    grid-area: letter; 
-    padding: 20px; 
-    text-align: center; 
-    background-color: #F7F5EF;
-}
-
-.letter h2{ 
-    color: #556B44; 
-    text-align: left; 
-    padding-left: 16%; 
-}
-
-.letter textarea{ 
-    width: 150%; 
-    max-width: 1200px; 
-    height: 300px; 
-    padding: 15px; 
-    font-size: 18px; 
-    border: 2px solid #eee9dd; 
-    border-radius: 10px; 
-    resize: vertical; 
-}
-
-.letter button{ 
-    background-color: #556B44; 
-    color: white; 
-    border: none; 
-    padding: 12px 25px; 
-    font-size: 18px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-}
-
-
-.letter button:hover{ 
-    background-color: #445535; 
-}
-
-.motivation{
-    grid-area: motivation;
-    color: #556B44; 
-    margin: 5%;
-    background-color: #F7F5EF;
-    border: 2px solid #eee9dd; 
-    border-radius: 10px; 
-}
 
 .quotes{
     grid-area: quotes;
-    margin: 5%;
-    border-radius: 10px; 
-    background-color: #F7F5EF;
-    border: 2px solid #eee9dd; 
+    text-align: center;
 }
 
 .verse{
     grid-area: verse;
-    color: #556B44; 
-    margin: 5%;
-    border-radius: 10px; 
-    background-color: #F7F5EF;
-    border: 2px solid #eee9dd; 
-
+    text-align: center;
 }
-
-
 
 .past_prayers{
     grid-area: past_prayers;
-    color: #556B44; 
-    padding-left: 10%;
-    border-radius: 10px; 
-    background-color: #F7F5EF;
-    border: 2px solid #eee9dd; 
-
-}
-
-.past_prayers li{
-    color: black;
+    text-align: center;
 }
 
 .footer{
     grid-area: footer;
-    background: #556B44; 
-    color: #F7F5EF; 
-    padding: 2%; 
-    margin: 0%; 
-    text-align: center;
-}
-
-h4{
-    color: black;
 }
