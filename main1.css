@@ -4,7 +4,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "navbar navbar navbar"
     "banner banner banner"
     "emojis emojis emojis"
     "letter letter letter"
@@ -33,15 +32,16 @@
 
 .navbar{
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: right;
     padding: 20px 40px;
-    top: 0;
-    left: 0;
-    width: 100%;
     box-sizing: border-box;
     z-index: 100;
+
 }
 
 .logo-section{
@@ -55,7 +55,6 @@
     margin-right: 10px;
 }
 
-
 .menu{
     display: flex;
     gap: 25px;
@@ -68,21 +67,15 @@
     font-weight: bold;
 }
 
-.menu a:hover {
-    color: #78ce27;
-}
-
 .banner{
     grid-area: banner;
     width: 100%;
 }
-
 .bannerimage{
     width: 100%;
     height: auto;
     display: block;
-}   
-
+}
 
 .emojis{
     grid-area: emojis;
