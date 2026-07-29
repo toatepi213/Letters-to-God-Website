@@ -1,3 +1,7 @@
+
+body{
+        background-color: #FBF3E7;
+}
 .container {
     display: grid;
     height: 100vh;
@@ -11,7 +15,7 @@
     "motivation quotes prayer_tips"
     "past_prayers past_prayers past_prayers"
     "footer footer footer";
-    background-color: #F7F5EF;
+    background-color: #FBF3E7;
     color: #333333;
     margin: 0;
     padding:0;
