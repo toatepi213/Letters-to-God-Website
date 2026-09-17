@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Letters to God</title>
+
+    <link rel="stylesheet" href="main2.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <div class="logo-section">
+                <a href="index.html">
+                    <img
+                        src="logo/blue red and stamp.png"
+                        alt="Letters to God logo"
+                    >
+                </a>
+
+                <h1>Letters to God</h1>
+            </div>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="pastprayers.html">Past Prayers</a>
+                <a href="about.html">About</a>
+                <a href="account.html">My Account</a>
+            </div>
+
+        </nav>
+
+
+        <div class="banner">
+            <img
+                src="logo/banner2.png"
+                alt="Letters to God banner"
+            >
+        </div>
+
+
+        <section class="emojis">
+
+            <h3>How I feel right now</h3>
+
+            <div class="emoji-list">
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Blessed"
+                >
+                    <span>😇</span>
+                    <p>Blessed</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Happy"
+                >
+                    <span>😀</span>
+                    <p>Happy</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Smiley"
+                >
+                    <span>😊</span>
+                    <p>Smiley</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Sleepy"
+                >
+                    <span>😪</span>
+                    <p>Sleepy</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Surprised"
+                >
+                    <span>😮</span>
+                    <p>Surprised</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Crying"
+                >
+                    <span>😭</span>
+                    <p>Crying</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Other"
+                >
+                    <span>😶</span>
+                    <p>Other</p>
+                </button>
+
+            </div>
+
+            <p id="selectedMood">
+                Selected feeling: None
+            </p>
+
+        </section>
+
+
+        <main class="letter">
+
+            <h2>Write Your Prayer</h2>
+
+            <textarea
+                id="prayerBox"
+                placeholder="Dear God, today I am grateful for..."
+                maxlength="5000"
+            ></textarea>
+
+            <div class="prayer-actions">
+
+                <button
+                    type="button"
+                    id="savePrayerButton"
+                >
+                    Save Prayer
+                </button>
+
+                <span id="characterCount">
+                    0 / 5000
+                </span>
+
+            </div>
+
+            <p id="saveMessage" class="status-message"></p>
+
+            <p id="loginReminder" class="login-reminder">
+                You must be signed in to save a prayer.
+                <a href="account.html">Sign in or create an account</a>
+            </p>
+
+        </main>
+
+
+        <section class="motivation">
+
+            <h2>Verse for the Day</h2>
+
+            <h4>
+                Joshua 1:9 — “Have I not commanded you?
+                Be strong and courageous. Do not be afraid;
+                do not be discouraged, for the Lord your God
+                will be with you wherever you go.”
+            </h4>
+
+            <p>NIV</p>
+
+        </section>
+
+
+        <section class="quotes">
+
+            <h2>Quote of the Day</h2>
+
+            <h4>
+                “Every cloud has a silver lining.”
+            </h4>
+
+            <p>Anonymous</p>
+
+        </section>
+
+
+        <section class="prayer_tips">
+
+            <h2>Prayer Tips</h2>
+
+            <p>
+                <strong>A</strong>doration<br>
+                <strong>C</strong>onfession<br>
+                <strong>T</strong>hanksgiving<br>
+                <strong>S</strong>upplication
+            </p>
+
+        </section>
+
+
+        <section class="past_prayers">
+
+            <h2>My Recent Prayers</h2>
+
+            <p>
+                View your saved prayers on the
+                <a href="pastprayers.html">Past Prayers page</a>.
+            </p>
+
+        </section>
+
+
+        <footer class="footer">
+
+            Toatepi Kalekava Mau<br>
+            Auckland Seventh-day Adventist High School<br>
+            2026
+
+        </footer>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>

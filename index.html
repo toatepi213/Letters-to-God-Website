@@ -6,7 +6,11 @@
     <title>Letters to God</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
+
+
+
     <div class="container">
 
         <div class="banner">
@@ -33,49 +37,101 @@
 
 
   
-        <div class="emojis">
+        <section class="emojis">
              <h2>How I feel right now</h2>
 
             <div class="emoji-list">
 
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128519;</span>
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Blessed"
+                >
+                    <span>😇</span>
                     <p>Blessed</p>
-                </div>
-
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128512;</span>
+                </button>
+                    
+             
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Happy"
+                >
+                    <span>😀</span>
                     <p>Happy</p>
-                </div>
+                </button>
 
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128522;</span>
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Smiley"
+                >
+                    <span>😊</span>
                     <p>Smiley</p>
-                </div>
+                </button>
 
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128554;</span>
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Sleepy"
+                >
+                    <span>😪</span>
                     <p>Sleepy</p>
-                </div>
+                </button>
 
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128558;</span>
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Surprised"
+                >
+                    <span>😮</span>
                     <p>Surprised</p>
-                </div>
+                </button>
 
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128557;</span>
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="Crying"
+                >
+                    <span>😭</span>
                     <p>Crying</p>
-                </div>
-
-                <div class="emoji-item">
-                    <span style='font-size:100px;'>&#128566;</span>
-                    <p>Others</p>
-                </div>
-
+                </button>
+                
+            <div class="emoji-item other-item">
+                <button
+                    type="button"
+                    class="emoji-item collapsible"
+                    data-mood="Other"
+                >
+                    <span>😶</span>
+                    <p>Other</p>
+                </button>
+                    <div class="content">
+                        <button type="button" class="mood-option" data-mood="Angry">😡 Angry</button>
+                        <button type="button" class="mood-option" data-mood="Shocked">😱 Shocked</button>
+                        <button type="button" class="mood-option" data-mood="Tired">😴 Tired</button>
+                        <button type="button" class="mood-option" data-mood="Confused">😕 Confused</button>
+                        <button type="button" class="mood-option" data-mood="Relaxed">😌 Relaxed</button>
+                        <button type="button" class="mood-option" data-mood="Sad">😔 Sad</button>
+                        <button type="button" class="mood-option" data-mood="Cool">😎 Cool</button>
+                        <button type="button" class="mood-option" data-mood="Smug">😏 Smug</button>
+                    </div>
             </div>
-        </div>
 
+                <button
+                    type="button"
+                    class="emoji-item"
+                    data-mood="None">
+
+                    <span>👊</span>
+                <p id="selectedMood"></p>
+                </button>
+
+            </div>        
+
+        </section>
+    
+        <script src="script.js"></script>
         
 
         <div class="letter">
@@ -85,8 +141,8 @@
                         placeholder="Dear God, thank you for..."
                         rows="10"
                         cols="80"></textarea>
-                <br><br>
-
+                <br>
+                <br>
                 <button type="button">Save Prayer</button>
         </div>
 
@@ -102,6 +158,8 @@
             <H4>"Every cloud has a silver lining"</H4>
             <p>annonymous</p>
         </div>
+
+
         <div class="prayer_tips">
                 <h2>Prayer Tips</h2>
                     <p>
@@ -111,8 +169,6 @@
                         <b>S</b>upplication<br>
                     </p>
         </div>
-
-        <div class="whitespace"></div>
 
         <div class="past_prayers">
             <H2>My Prayers</H2>
